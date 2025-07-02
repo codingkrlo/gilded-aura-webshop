@@ -1,29 +1,37 @@
-
 import { useState } from "react";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import ProductCard from "@/components/ProductCard";
 import LoginModal from "@/components/LoginModal";
+import ContactCard from "@/components/ContactCard";
+import AboutSection from "@/components/AboutSection";
 import { jewelryItems, JewelryItem } from "@/data/jewelry";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Star, Shield, Truck } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useCart } from "@/hooks/useCart";
+import { useToast } from "@/hooks/use-toast";
 
 const Index = () => {
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
-  const [cartCount, setCartCount] = useState(0);
+  const { addToCart, getCartCount } = useCart();
+  const { toast } = useToast();
 
   const featuredItems = jewelryItems.filter(item => item.featured).slice(0, 8);
 
   const handleAddToCart = (item: JewelryItem) => {
-    setCartCount(prev => prev + 1);
-    console.log("Added to cart:", item);
+    addToCart(item);
+    toast({
+      title: "Added to cart",
+      description: `${item.name} has been added to your cart.`,
+      duration: 2000,
+    });
   };
 
   return (
     <div className="min-h-screen bg-jetblack-200">
       <Header 
-        cartCount={cartCount} 
+        cartCount={getCartCount()} 
         onLoginClick={() => setIsLoginModalOpen(true)} 
       />
       
@@ -55,6 +63,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* About Section */}
+      <AboutSection />
 
       {/* Features Section */}
       <section className="py-20 bg-jetblack-100">
@@ -90,6 +101,19 @@ const Index = () => {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="py-20 bg-jetblack-200">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-white mb-4">Get in Touch</h2>
+            <p className="text-silver-400 text-lg">
+              Click our business card to reveal our contact information
+            </p>
+          </div>
+          <ContactCard />
         </div>
       </section>
 

@@ -1,14 +1,18 @@
-
 import { useState } from "react";
 import { jewelryItems } from "@/data/jewelry";
 import ProductCard from "@/components/ProductCard";
 import { JewelryItem } from "@/data/jewelry";
 import Header from "@/components/Header";
+import { useCart } from "@/hooks/useCart";
+import { useToast } from "@/hooks/use-toast";
 
 const Collections = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
   const [selectedMaterial, setSelectedMaterial] = useState<string>("all");
   const [sortBy, setSortBy] = useState<string>("featured");
+  
+  const { addToCart, getCartCount } = useCart();
+  const { toast } = useToast();
 
   const categories = ["all", "rings", "necklaces", "earrings", "bracelets", "watches"];
   const materials = ["all", "gold", "silver", "platinum", "diamond"];
@@ -27,8 +31,12 @@ const Collections = () => {
     });
 
   const handleAddToCart = (item: JewelryItem) => {
-    console.log("Added to cart:", item);
-    // Add toast notification here
+    addToCart(item);
+    toast({
+      title: "Added to cart",
+      description: `${item.name} has been added to your cart.`,
+      duration: 2000,
+    });
   };
 
   return (
@@ -40,7 +48,7 @@ const Collections = () => {
         <div className="absolute w-72 h-72 bg-gradient-to-t from-gold-400/20 via-gold-300/30 to-gold-500/20 rounded-full blur-3xl animate-pulse opacity-40 bottom-20 left-1/3"></div>
       </div>
       
-      <Header cartCount={0} onLoginClick={() => {}} showBackButton={true} />
+      <Header cartCount={getCartCount()} onLoginClick={() => {}} showBackButton={true} />
       
       <div className="relative z-10 pt-20">
         <div className="max-w-7xl mx-auto px-4 py-8">

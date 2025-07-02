@@ -1,5 +1,7 @@
 
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { ArrowLeft } from "lucide-react";
 import { jewelryItems } from "@/data/jewelry";
 import ProductCard from "@/components/ProductCard";
 import { JewelryItem } from "@/data/jewelry";
@@ -8,6 +10,7 @@ const Collections = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
   const [selectedMaterial, setSelectedMaterial] = useState<string>("all");
   const [sortBy, setSortBy] = useState<string>("featured");
+  const navigate = useNavigate();
 
   const categories = ["all", "rings", "necklaces", "earrings", "bracelets", "watches"];
   const materials = ["all", "gold", "silver", "platinum", "diamond"];
@@ -32,6 +35,19 @@ const Collections = () => {
 
   return (
     <div className="min-h-screen bg-jetblack-200 pt-20">
+      {/* Back Button */}
+      <div className="max-w-7xl mx-auto px-4 pt-4">
+        <div className="flex justify-end">
+          <button
+            onClick={() => navigate(-1)}
+            className="flex items-center gap-2 text-silver-400 hover:text-gold-500 transition-colors duration-300 bg-jetblack-100/50 hover:bg-jetblack-100/70 px-4 py-2 rounded-lg backdrop-blur-sm border border-silver-600/30 hover:border-gold-500/30"
+          >
+            <ArrowLeft className="h-4 w-4" />
+            <span className="font-medium">Back</span>
+          </button>
+        </div>
+      </div>
+
       <div className="max-w-7xl mx-auto px-4 py-8">
         {/* Header */}
         <div className="text-center mb-12">

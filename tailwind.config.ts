@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,43 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Jewelry theme colors
+				gold: {
+					50: '#FFFDF5',
+					100: '#FFF9E6',
+					200: '#FFF2CC',
+					300: '#FFEB99',
+					400: '#FFE066',
+					500: '#FFD700',
+					600: '#E6C200',
+					700: '#B8A100',
+					800: '#8A7A00',
+					900: '#5C5200'
+				},
+				silver: {
+					50: '#F8F9FA',
+					100: '#F1F3F4',
+					200: '#E8EAED',
+					300: '#DADCE0',
+					400: '#BDC1C6',
+					500: '#C0C0C0',
+					600: '#9AA0A6',
+					700: '#5F6368',
+					800: '#3C4043',
+					900: '#202124'
+				},
+				jetblack: {
+					50: '#1A1A1A',
+					100: '#0F0F0F',
+					200: '#0A0A0A',
+					300: '#050505',
+					400: '#030303',
+					500: '#000000',
+					600: '#000000',
+					700: '#000000',
+					800: '#000000',
+					900: '#000000'
 				}
 			},
 			borderRadius: {
@@ -84,11 +122,56 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': {
+						transform: 'translateY(0px)'
+					},
+					'50%': {
+						transform: 'translateY(-20px)'
+					}
+				},
+				'sparkle': {
+					'0%, 100%': {
+						opacity: '0.7',
+						transform: 'scale(1)'
+					},
+					'50%': {
+						opacity: '1',
+						transform: 'scale(1.2)'
+					}
+				},
+				'shimmer': {
+					'0%': {
+						backgroundPosition: '-200% 0'
+					},
+					'100%': {
+						backgroundPosition: '200% 0'
+					}
+				},
+				'fade-in-up': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(30px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 6s ease-in-out infinite',
+				'sparkle': 'sparkle 2s ease-in-out infinite',
+				'shimmer': 'shimmer 2s linear infinite',
+				'fade-in-up': 'fade-in-up 0.8s ease-out'
+			},
+			backgroundImage: {
+				'gradient-gold': 'linear-gradient(135deg, #FFD700 0%, #FFA500 100%)',
+				'gradient-silver': 'linear-gradient(135deg, #C0C0C0 0%, #808080 100%)',
+				'gradient-shimmer': 'linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent)'
 			}
 		}
 	},

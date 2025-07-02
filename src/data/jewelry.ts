@@ -22,31 +22,31 @@ export const jewelryItems: JewelryItem[] = [
   
   // Necklaces
   { id: 6, name: "Diamond Tennis Necklace", category: "necklaces", price: 4999, material: "diamond", image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=500", description: "Exquisite diamond tennis necklace", inStock: true, featured: true },
-  { id: 7, name: "Pearl Strand Necklace", category: "necklaces", price: 1599, material: "silver", image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=500", description: "Classic freshwater pearl necklace", inStock: true },
-  { id: 8, name: "Gold Chain Necklace", category: "necklaces", price: 799, material: "gold", image: "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=500", description: "Elegant 14k gold chain necklace", inStock: true },
-  { id: 9, name: "Sapphire Pendant", category: "necklaces", price: 2199, material: "gold", image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=500", description: "Blue sapphire pendant in white gold", inStock: true },
-  { id: 10, name: "Silver Locket", category: "necklaces", price: 499, material: "silver", image: "https://images.unsplash.com/photo-1594736797933-d0d00bb34076?w=500", description: "Vintage sterling silver locket", inStock: true },
+  { id: 7, name: "Pearl Strand Necklace", category: "necklaces", price: 1599, material: "silver", image: "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?w=500", description: "Classic freshwater pearl necklace", inStock: true },
+  { id: 8, name: "Gold Chain Necklace", category: "necklaces", price: 799, material: "gold", image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=500", description: "Elegant 14k gold chain necklace", inStock: true },
+  { id: 9, name: "Sapphire Pendant", category: "necklaces", price: 2199, material: "gold", image: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=500", description: "Blue sapphire pendant in white gold", inStock: true },
+  { id: 10, name: "Silver Locket", category: "necklaces", price: 499, material: "silver", image: "https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?w=500", description: "Vintage sterling silver locket", inStock: true },
   
   // Earrings
-  { id: 11, name: "Diamond Stud Earrings", category: "earrings", price: 1899, material: "diamond", image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=500", description: "Classic diamond stud earrings", inStock: true, featured: true },
-  { id: 12, name: "Gold Hoop Earrings", category: "earrings", price: 699, material: "gold", image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=500", description: "Medium-sized gold hoop earrings", inStock: true },
-  { id: 13, name: "Pearl Drop Earrings", category: "earrings", price: 899, material: "silver", image: "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=500", description: "Elegant pearl drop earrings", inStock: true },
-  { id: 14, name: "Silver Chandelier Earrings", category: "earrings", price: 599, material: "silver", image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=500", description: "Statement chandelier earrings", inStock: true },
-  { id: 15, name: "Ruby Stud Earrings", category: "earrings", price: 1499, material: "gold", image: "https://images.unsplash.com/photo-1594736797933-d0d00bb34076?w=500", description: "Brilliant ruby stud earrings", inStock: true },
+  { id: 11, name: "Diamond Stud Earrings", category: "earrings", price: 1899, material: "diamond", image: "https://images.unsplash.com/photo-1596944916160-3d5039cf7da6?w=500", description: "Classic diamond stud earrings", inStock: true, featured: true },
+  { id: 12, name: "Gold Hoop Earrings", category: "earrings", price: 699, material: "gold", image: "https://images.unsplash.com/photo-1635767798638-3e25273a8236?w=500", description: "Medium-sized gold hoop earrings", inStock: true },
+  { id: 13, name: "Pearl Drop Earrings", category: "earrings", price: 899, material: "silver", image: "https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=500", description: "Elegant pearl drop earrings", inStock: true },
+  { id: 14, name: "Silver Chandelier Earrings", category: "earrings", price: 599, material: "silver", image: "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=500", description: "Statement chandelier earrings", inStock: true },
+  { id: 15, name: "Ruby Stud Earrings", category: "earrings", price: 1499, material: "gold", image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=500", description: "Brilliant ruby stud earrings", inStock: true },
   
   // Bracelets
-  { id: 16, name: "Tennis Bracelet", category: "bracelets", price: 2999, material: "diamond", image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=500", description: "Classic diamond tennis bracelet", inStock: true, featured: true },
+  { id: 16, name: "Tennis Bracelet", category: "bracelets", price: 2999, material: "diamond", image: "https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=500", description: "Classic diamond tennis bracelet", inStock: true, featured: true },
   { id: 17, name: "Gold Chain Bracelet", category: "bracelets", price: 599, material: "gold", image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=500", description: "Delicate gold chain bracelet", inStock: true },
-  { id: 18, name: "Silver Charm Bracelet", category: "bracelets", price: 399, material: "silver", image: "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=500", description: "Sterling silver charm bracelet", inStock: true },
-  { id: 19, name: "Platinum Bangle", category: "bracelets", price: 1299, material: "platinum", image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=500", description: "Sleek platinum bangle", inStock: true },
+  { id: 18, name: "Silver Charm Bracelet", category: "bracelets", price: 399, material: "silver", image: "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=500", description: "Sterling silver charm bracelet", inStock: true },
+  { id: 19, name: "Platinum Bangle", category: "bracelets", price: 1299, material: "platinum", image: "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=500", description: "Sleek platinum bangle", inStock: true },
   { id: 20, name: "Gemstone Bracelet", category: "bracelets", price: 799, material: "gold", image: "https://images.unsplash.com/photo-1594736797933-d0d00bb34076?w=500", description: "Multi-gemstone gold bracelet", inStock: true },
   
   // Watches
-  { id: 21, name: "Luxury Gold Watch", category: "watches", price: 5999, material: "gold", image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=500", description: "Swiss-made luxury gold watch", inStock: true, featured: true },
-  { id: 22, name: "Silver Dress Watch", category: "watches", price: 1999, material: "silver", image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=500", description: "Elegant silver dress watch", inStock: true },
-  { id: 23, name: "Diamond Watch", category: "watches", price: 8999, material: "diamond", image: "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=500", description: "Diamond-encrusted luxury watch", inStock: true },
-  { id: 24, name: "Platinum Chronograph", category: "watches", price: 4999, material: "platinum", image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=500", description: "Precision platinum chronograph", inStock: true },
-  { id: 25, name: "Classic Gold Watch", category: "watches", price: 2999, material: "gold", image: "https://images.unsplash.com/photo-1594736797933-d0d00bb34076?w=500", description: "Timeless gold timepiece", inStock: true },
+  { id: 21, name: "Luxury Gold Watch", category: "watches", price: 5999, material: "gold", image: "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=500", description: "Swiss-made luxury gold watch", inStock: true, featured: true },
+  { id: 22, name: "Silver Dress Watch", category: "watches", price: 1999, material: "silver", image: "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=500", description: "Elegant silver dress watch", inStock: true },
+  { id: 23, name: "Diamond Watch", category: "watches", price: 8999, material: "diamond", image: "https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=500", description: "Diamond-encrusted luxury watch", inStock: true },
+  { id: 24, name: "Platinum Chronograph", category: "watches", price: 4999, material: "platinum", image: "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?w=500", description: "Precision platinum chronograph", inStock: true },
+  { id: 25, name: "Classic Gold Watch", category: "watches", price: 2999, material: "gold", image: "https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=500", description: "Timeless gold timepiece", inStock: true },
   
   // Additional items to reach 50
   { id: 26, name: "Art Deco Ring", category: "rings", price: 1799, material: "platinum", image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=500", description: "Vintage Art Deco inspired ring", inStock: true },

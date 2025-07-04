@@ -29,32 +29,32 @@ const ContactCard = () => {
           </div>
 
           {/* Back Side - Contact Information */}
-          <div className="absolute inset-0 w-full h-full backface-hidden rotate-y-180 bg-jetblack-500 rounded-xl shadow-2xl border border-gold-500/20 p-6">
-            <div className="flex flex-col justify-center h-full space-y-4">
-              <div className="text-center mb-4">
+          <div className="absolute inset-0 w-full h-full backface-hidden rotate-y-180 bg-jetblack-500 rounded-xl shadow-2xl border border-gold-500/20 p-4">
+            <div className="flex flex-col justify-center items-center h-full space-y-3">
+              <div className="text-center mb-2">
                 <div className="flex items-center justify-center space-x-2 mb-2">
                   <div className="w-8 h-8 bg-gradient-gold rounded-full flex items-center justify-center">
                     <span className="text-jetblack-500 font-bold text-sm">L</span>
                   </div>
                   <span className="text-xl font-bold text-gold-500 font-serif">LUXE</span>
                 </div>
-                <p className="text-gold-400 text-sm">Premium Jewelry Since 1895</p>
+                <p className="text-gold-400 text-xs">Premium Jewelry Since 1895</p>
               </div>
               
-              <div className="space-y-3 text-center">
+              <div className="space-y-2 text-center w-full">
                 <div>
-                  <p className="text-gold-300 text-sm font-medium">Phone</p>
-                  <p className="text-gold-500 font-semibold">+1 (555) 123-4567</p>
+                  <p className="text-gold-300 text-xs font-medium">Phone</p>
+                  <p className="text-gold-500 font-semibold text-sm">+1 (555) 123-4567</p>
                 </div>
                 
                 <div>
-                  <p className="text-gold-300 text-sm font-medium">Email</p>
-                  <p className="text-gold-500 font-semibold">contact@luxejewelry.com</p>
+                  <p className="text-gold-300 text-xs font-medium">Email</p>
+                  <p className="text-gold-500 font-semibold text-sm">contact@luxejewelry.com</p>
                 </div>
                 
                 <div>
-                  <p className="text-gold-300 text-sm font-medium">Address</p>
-                  <p className="text-gold-500 font-semibold text-sm">
+                  <p className="text-gold-300 text-xs font-medium">Address</p>
+                  <p className="text-gold-500 font-semibold text-xs leading-tight">
                     123 Diamond Street<br />
                     New York, NY 10001
                   </p>

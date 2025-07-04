@@ -1,4 +1,3 @@
-
 export interface JewelryItem {
   id: number;
   name: string;
@@ -13,69 +12,454 @@ export interface JewelryItem {
 }
 
 export const jewelryItems: JewelryItem[] = [
-  // Rings
-  { id: 1, name: "Eternal Diamond Ring", category: "rings", price: 2499, material: "gold", image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=500", description: "Stunning solitaire diamond ring in 18k gold", inStock: true, featured: true },
-  { id: 2, name: "Classic Wedding Band", category: "rings", price: 899, material: "platinum", image: "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=500", description: "Timeless platinum wedding band", inStock: true },
-  { id: 3, name: "Vintage Rose Gold Ring", category: "rings", price: 1299, material: "gold", image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=500", description: "Elegant vintage-inspired rose gold ring", inStock: true },
-  { id: 4, name: "Silver Statement Ring", category: "rings", price: 399, material: "silver", image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=500", description: "Bold sterling silver statement piece", inStock: true },
-  { id: 5, name: "Emerald Halo Ring", category: "rings", price: 3299, material: "gold", image: "https://images.unsplash.com/photo-1594736797933-d0d00bb34076?w=500", description: "Luxurious emerald with diamond halo", inStock: true, featured: true },
-  
-  // Necklaces
-  { id: 6, name: "Diamond Tennis Necklace", category: "necklaces", price: 4999, material: "diamond", image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=500", description: "Exquisite diamond tennis necklace", inStock: true, featured: true },
-  { id: 7, name: "Pearl Strand Necklace", category: "necklaces", price: 1599, material: "silver", image: "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?w=500", description: "Classic freshwater pearl necklace", inStock: true },
-  { id: 8, name: "Gold Chain Necklace", category: "necklaces", price: 799, material: "gold", image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=500", description: "Elegant 14k gold chain necklace", inStock: true },
-  { id: 9, name: "Sapphire Pendant", category: "necklaces", price: 2199, material: "gold", image: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=500", description: "Blue sapphire pendant in white gold", inStock: true },
-  { id: 10, name: "Silver Locket", category: "necklaces", price: 499, material: "silver", image: "https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?w=500", description: "Vintage sterling silver locket", inStock: true },
-  
-  // Earrings
-  { id: 11, name: "Diamond Stud Earrings", category: "earrings", price: 1899, material: "diamond", image: "https://images.unsplash.com/photo-1596944916160-3d5039cf7da6?w=500", description: "Classic diamond stud earrings", inStock: true, featured: true },
-  { id: 12, name: "Gold Hoop Earrings", category: "earrings", price: 699, material: "gold", image: "https://images.unsplash.com/photo-1635767798638-3e25273a8236?w=500", description: "Medium-sized gold hoop earrings", inStock: true },
-  { id: 13, name: "Pearl Drop Earrings", category: "earrings", price: 899, material: "silver", image: "https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=500", description: "Elegant pearl drop earrings", inStock: true },
-  { id: 14, name: "Silver Chandelier Earrings", category: "earrings", price: 599, material: "silver", image: "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=500", description: "Statement chandelier earrings", inStock: true },
-  { id: 15, name: "Ruby Stud Earrings", category: "earrings", price: 1499, material: "gold", image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=500", description: "Brilliant ruby stud earrings", inStock: true },
-  
-  // Bracelets
-  { id: 16, name: "Tennis Bracelet", category: "bracelets", price: 2999, material: "diamond", image: "https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=500", description: "Classic diamond tennis bracelet", inStock: true, featured: true },
-  { id: 17, name: "Gold Chain Bracelet", category: "bracelets", price: 599, material: "gold", image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=500", description: "Delicate gold chain bracelet", inStock: true },
-  { id: 18, name: "Silver Charm Bracelet", category: "bracelets", price: 399, material: "silver", image: "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=500", description: "Sterling silver charm bracelet", inStock: true },
-  { id: 19, name: "Platinum Bangle", category: "bracelets", price: 1299, material: "platinum", image: "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=500", description: "Sleek platinum bangle", inStock: true },
-  { id: 20, name: "Gemstone Bracelet", category: "bracelets", price: 799, material: "gold", image: "https://images.unsplash.com/photo-1594736797933-d0d00bb34076?w=500", description: "Multi-gemstone gold bracelet", inStock: true },
-  
-  // Watches
-  { id: 21, name: "Luxury Gold Watch", category: "watches", price: 5999, material: "gold", image: "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=500", description: "Swiss-made luxury gold watch", inStock: true, featured: true },
-  { id: 22, name: "Silver Dress Watch", category: "watches", price: 1999, material: "silver", image: "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=500", description: "Elegant silver dress watch", inStock: true },
-  { id: 23, name: "Diamond Watch", category: "watches", price: 8999, material: "diamond", image: "https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=500", description: "Diamond-encrusted luxury watch", inStock: true },
-  { id: 24, name: "Platinum Chronograph", category: "watches", price: 4999, material: "platinum", image: "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?w=500", description: "Precision platinum chronograph", inStock: true },
-  { id: 25, name: "Classic Gold Watch", category: "watches", price: 2999, material: "gold", image: "https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=500", description: "Timeless gold timepiece", inStock: true },
-  
-  // Additional items to reach 50
-  { id: 26, name: "Art Deco Ring", category: "rings", price: 1799, material: "platinum", image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=500", description: "Vintage Art Deco inspired ring", inStock: true },
-  { id: 27, name: "Infinity Necklace", category: "necklaces", price: 899, material: "gold", image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=500", description: "Gold infinity symbol necklace", inStock: true },
-  { id: 28, name: "Crystal Earrings", category: "earrings", price: 399, material: "silver", image: "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=500", description: "Sparkling crystal earrings", inStock: true },
-  { id: 29, name: "Leather Watch Band", category: "watches", price: 199, material: "silver", image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=500", description: "Premium leather watch band", inStock: true },
-  { id: 30, name: "Gemstone Ring", category: "rings", price: 999, material: "gold", image: "https://images.unsplash.com/photo-1594736797933-d0d00bb34076?w=500", description: "Multi-gemstone cocktail ring", inStock: true },
-  
-  { id: 31, name: "Chain Link Bracelet", category: "bracelets", price: 699, material: "silver", image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=500", description: "Heavy chain link bracelet", inStock: true },
-  { id: 32, name: "Pendant Necklace", category: "necklaces", price: 599, material: "gold", image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=500", description: "Delicate gold pendant", inStock: true },
-  { id: 33, name: "Statement Earrings", category: "earrings", price: 799, material: "gold", image: "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=500", description: "Bold statement earrings", inStock: true },
-  { id: 34, name: "Vintage Brooch", category: "rings", price: 399, material: "silver", image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=500", description: "Antique silver brooch", inStock: true },
-  { id: 35, name: "Sports Watch", category: "watches", price: 1299, material: "silver", image: "https://images.unsplash.com/photo-1594736797933-d0d00bb34076?w=500", description: "Professional sports watch", inStock: true },
-  
-  { id: 36, name: "Eternity Ring", category: "rings", price: 2199, material: "platinum", image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=500", description: "Diamond eternity band", inStock: true },
-  { id: 37, name: "Choker Necklace", category: "necklaces", price: 499, material: "gold", image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=500", description: "Modern gold choker", inStock: true },
-  { id: 38, name: "Threader Earrings", category: "earrings", price: 299, material: "silver", image: "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=500", description: "Delicate threader earrings", inStock: true },
-  { id: 39, name: "Cuff Bracelet", category: "bracelets", price: 899, material: "gold", image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=500", description: "Wide gold cuff bracelet", inStock: true },
-  { id: 40, name: "Pocket Watch", category: "watches", price: 799, material: "gold", image: "https://images.unsplash.com/photo-1594736797933-d0d00bb34076?w=500", description: "Classic gold pocket watch", inStock: true },
-  
-  { id: 41, name: "Stackable Rings", category: "rings", price: 599, material: "gold", image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=500", description: "Set of stackable gold rings", inStock: true },
-  { id: 42, name: "Layered Necklace", category: "necklaces", price: 799, material: "silver", image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=500", description: "Multi-layer silver necklace", inStock: true },
-  { id: 43, name: "Ear Cuffs", category: "earrings", price: 199, material: "gold", image: "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=500", description: "Trendy gold ear cuffs", inStock: true },
-  { id: 44, name: "Ankle Bracelet", category: "bracelets", price: 299, material: "silver", image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=500", description: "Delicate silver anklet", inStock: true },
-  { id: 45, name: "Smart Watch", category: "watches", price: 3999, material: "gold", image: "https://images.unsplash.com/photo-1594736797933-d0d00bb34076?w=500", description: "Luxury smart watch", inStock: true },
-  
-  { id: 46, name: "Signet Ring", category: "rings", price: 1099, material: "gold", image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=500", description: "Classic gold signet ring", inStock: true },
-  { id: 47, name: "Bar Necklace", category: "necklaces", price: 399, material: "gold", image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=500", description: "Minimalist gold bar necklace", inStock: true },
-  { id: 48, name: "Huggie Earrings", category: "earrings", price: 499, material: "gold", image: "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=500", description: "Small gold huggie hoops", inStock: true },
-  { id: 49, name: "Tennis Anklet", category: "bracelets", price: 1299, material: "platinum", image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=500", description: "Diamond tennis anklet", inStock: true },
-  { id: 50, name: "Skeleton Watch", category: "watches", price: 2599, material: "silver", image: "https://images.unsplash.com/photo-1594736797933-d0d00bb34076?w=500", description: "Mechanical skeleton watch", inStock: true },
+  {
+    id: 1,
+    name: "Diamond Rose Ring",
+    price: 2899,
+    image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80",
+    description: "Elegant rose gold ring featuring a brilliant cut diamond center stone surrounded by smaller diamonds.",
+    category: "rings",
+    featured: true
+  },
+  {
+    id: 2,
+    name: "Sapphire Vintage Necklace",
+    price: 4299,
+    image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&q=80",
+    description: "Vintage-inspired necklace with deep blue sapphires set in white gold with intricate filigree work.",
+    category: "necklaces",
+    featured: true
+  },
+  {
+    id: 3,
+    name: "Pearl Drop Earrings",
+    price: 1899,
+    image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=800&q=80",
+    description: "Classic pearl drop earrings with Tahitian pearls and diamond accents in platinum setting.",
+    category: "earrings",
+    featured: true
+  },
+  {
+    id: 4,
+    name: "Tennis Bracelet Supreme",
+    price: 5999,
+    image: "https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=800&q=80",
+    description: "Classic tennis bracelet featuring 50 perfectly matched diamonds in 18k white gold setting.",
+    category: "bracelets",
+    featured: true
+  },
+  {
+    id: 5,
+    name: "Emerald Crown Ring",
+    price: 7899,
+    image: "https://images.unsplash.com/photo-1543294001-f7cd5d7fb516?auto=format&fit=crop&w=800&q=80",
+    description: "Majestic emerald center stone surrounded by brilliant diamonds in a crown-like setting.",
+    category: "rings",
+    featured: true
+  },
+  {
+    id: 6,
+    name: "Infinity Diamond Necklace",
+    price: 3299,
+    image: "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?auto=format&fit=crop&w=800&q=80",
+    description: "Delicate infinity pendant with pave diamonds, symbolizing eternal love and commitment.",
+    category: "necklaces",
+    featured: true
+  },
+  {
+    id: 7,
+    name: "Ruby Chandelier Earrings",
+    price: 6799,
+    image: "https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?auto=format&fit=crop&w=800&q=80",
+    description: "Dramatic chandelier earrings featuring cascading rubies and diamonds in rose gold.",
+    category: "earrings",
+    featured: true
+  },
+  {
+    id: 8,
+    name: "Platinum Mesh Bracelet",
+    price: 4599,
+    image: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=800&q=80",
+    description: "Sophisticated platinum mesh bracelet with diamond-set clasp, perfect for any occasion.",
+    category: "bracelets",
+    featured: true
+  },
+  {
+    id: 9,
+    name: "Art Deco Diamond Ring",
+    price: 8999,
+    image: "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&fit=crop&w=800&q=80",
+    description: "Vintage Art Deco style ring with geometric patterns and brilliant diamonds.",
+    category: "rings",
+    featured: false
+  },
+  {
+    id: 10,
+    name: "Golden Coral Necklace",
+    price: 2199,
+    image: "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?auto=format&fit=crop&w=800&q=80",
+    description: "Elegant coral necklace with gold beads and natural coral formations.",
+    category: "necklaces",
+    featured: false
+  },
+  {
+    id: 11,
+    name: "Crystal Stud Earrings",
+    price: 899,
+    image: "https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=800&q=80",
+    description: "Sparkling crystal studs perfect for everyday elegance.",
+    category: "earrings",
+    featured: false
+  },
+  {
+    id: 12,
+    name: "Silver Link Bracelet",
+    price: 1299,
+    image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&q=80",
+    description: "Classic silver link bracelet with polished finish.",
+    category: "bracelets",
+    featured: false
+  },
+  {
+    id: 13,
+    name: "Moonstone Engagement Ring",
+    price: 3599,
+    image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80",
+    description: "Romantic moonstone ring with ethereal blue flash and diamond halo.",
+    category: "rings",
+    featured: false
+  },
+  {
+    id: 14,
+    name: "Vintage Pearl Choker",
+    price: 1799,
+    image: "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?auto=format&fit=crop&w=800&q=80",
+    description: "Classic pearl choker with vintage-inspired clasp.",
+    category: "necklaces",
+    featured: false
+  },
+  {
+    id: 15,
+    name: "Diamond Hoop Earrings",
+    price: 2499,
+    image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=800&q=80",
+    description: "Timeless diamond hoops with inside-out diamond setting.",
+    category: "earrings",
+    featured: false
+  },
+  {
+    id: 16,
+    name: "Rose Gold Cuff",
+    price: 1699,
+    image: "https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=800&q=80",
+    description: "Bold rose gold cuff with hammered texture finish.",
+    category: "bracelets",
+    featured: false
+  },
+  {
+    id: 17,
+    name: "Aquamarine Cocktail Ring",
+    price: 4899,
+    image: "https://images.unsplash.com/photo-1543294001-f7cd5d7fb516?auto=format&fit=crop&w=800&q=80",
+    description: "Statement aquamarine ring perfect for special occasions.",
+    category: "rings",
+    featured: false
+  },
+  {
+    id: 18,
+    name: "Byzantine Chain Necklace",
+    price: 3799,
+    image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&q=80",
+    description: "Intricate Byzantine chain in 18k gold with antique finish.",
+    category: "necklaces",
+    featured: false
+  },
+  {
+    id: 19,
+    name: "Tanzanite Stud Earrings",
+    price: 3299,
+    image: "https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?auto=format&fit=crop&w=800&q=80",
+    description: "Rare tanzanite studs with brilliant blue-purple hue.",
+    category: "earrings",
+    featured: false
+  },
+  {
+    id: 20,
+    name: "Charm Bracelet Deluxe",
+    price: 2299,
+    image: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=800&q=80",
+    description: "Customizable charm bracelet with starter charms included.",
+    category: "bracelets",
+    featured: false
+  },
+  {
+    id: 21,
+    name: "Opal Fire Ring",
+    price: 2799,
+    image: "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&fit=crop&w=800&q=80",
+    description: "Australian fire opal with spectacular color play.",
+    category: "rings",
+    featured: false
+  },
+  {
+    id: 22,
+    name: "Lariat Diamond Necklace",
+    price: 4599,
+    image: "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?auto=format&fit=crop&w=800&q=80",
+    description: "Modern lariat style with cascading diamonds.",
+    category: "necklaces",
+    featured: false
+  },
+  {
+    id: 23,
+    name: "Garnet Drop Earrings",
+    price: 1499,
+    image: "https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=800&q=80",
+    description: "Deep red garnet drops with vintage appeal.",
+    category: "earrings",
+    featured: false
+  },
+  {
+    id: 24,
+    name: "White Gold Bangle Set",
+    price: 1899,
+    image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&q=80",
+    description: "Set of three stackable white gold bangles.",
+    category: "bracelets",
+    featured: false
+  },
+  {
+    id: 25,
+    name: "Citrine Cocktail Ring",
+    price: 1999,
+    image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80",
+    description: "Sunny citrine in a bold cocktail ring setting.",
+    category: "rings",
+    featured: false
+  },
+  {
+    id: 26,
+    name: "Statement Pearl Necklace",
+    price: 5299,
+    image: "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?auto=format&fit=crop&w=800&q=80",
+    description: "Multi-strand baroque pearl necklace with gold accents.",
+    category: "necklaces",
+    featured: false
+  },
+  {
+    id: 27,
+    name: "Amethyst Cluster Earrings",
+    price: 1799,
+    image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=800&q=80",
+    description: "Cluster earrings featuring multiple amethyst stones.",
+    category: "earrings",
+    featured: false
+  },
+  {
+    id: 28,
+    name: "Herringbone Gold Bracelet",
+    price: 2699,
+    image: "https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=800&q=80",
+    description: "Classic herringbone pattern in 14k gold.",
+    category: "bracelets",
+    featured: false
+  },
+  {
+    id: 29,
+    name: "Tourmaline Trilogy Ring",
+    price: 3899,
+    image: "https://images.unsplash.com/photo-1543294001-f7cd5d7fb516?auto=format&fit=crop&w=800&q=80",
+    description: "Three-stone ring with pink, green, and blue tourmalines.",
+    category: "rings",
+    featured: false
+  },
+  {
+    id: 30,
+    name: "Opera Length Pearl Strand",
+    price: 6799,
+    image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&q=80",
+    description: "Long opera-length strand of cultured pearls.",
+    category: "necklaces",
+    featured: false
+  },
+  {
+    id: 31,
+    name: "Peridot Dangle Earrings",
+    price: 1399,
+    image: "https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?auto=format&fit=crop&w=800&q=80",
+    description: "Fresh green peridot in elegant dangle style.",
+    category: "earrings",
+    featured: false
+  },
+  {
+    id: 32,
+    name: "Twisted Rope Bracelet",
+    price: 999,
+    image: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=800&q=80",
+    description: "Twisted rope design in sterling silver.",
+    category: "bracelets",
+    featured: false
+  },
+  {
+    id: 33,
+    name: "Morganite Halo Ring",
+    price: 2899,
+    image: "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&fit=crop&w=800&q=80",
+    description: "Soft pink morganite with diamond halo setting.",
+    category: "rings",
+    featured: false
+  },
+  {
+    id: 34,
+    name: "Turquoise Station Necklace",
+    price: 1699,
+    image: "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?auto=format&fit=crop&w=800&q=80",
+    description: "Turquoise stones spaced along a delicate gold chain.",
+    category: "necklaces",
+    featured: false
+  },
+  {
+    id: 35,
+    name: "Topaz Teardrop Earrings",
+    price: 2199,
+    image: "https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=800&q=80",
+    description: "Blue topaz in elegant teardrop shape.",
+    category: "earrings",
+    featured: false
+  },
+  {
+    id: 36,
+    name: "Gemstone Tennis Bracelet",
+    price: 4299,
+    image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&q=80",
+    description: "Multi-colored gemstone tennis bracelet.",
+    category: "bracelets",
+    featured: false
+  },
+  {
+    id: 37,
+    name: "Spinel Solitaire Ring",
+    price: 3499,
+    image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80",
+    description: "Rare red spinel in classic solitaire setting.",
+    category: "rings",
+    featured: false
+  },
+  {
+    id: 38,
+    name: "Labradorite Pendant",
+    price: 899,
+    image: "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?auto=format&fit=crop&w=800&q=80",
+    description: "Mystical labradorite with blue flash pendant.",
+    category: "necklaces",
+    featured: false
+  },
+  {
+    id: 39,
+    name: "Iolite Cluster Studs",
+    price: 1199,
+    image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=800&q=80",
+    description: "Violet-blue iolite in cluster stud design.",
+    category: "earrings",
+    featured: false
+  },
+  {
+    id: 40,
+    name: "Beaded Gold Bracelet",
+    price: 1599,
+    image: "https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=800&q=80",
+    description: "Elegant beaded bracelet in 18k gold.",
+    category: "bracelets",
+    featured: false
+  },
+  {
+    id: 41,
+    name: "Alexandrite Color-Change Ring",
+    price: 9999,
+    image: "https://images.unsplash.com/photo-1543294001-f7cd5d7fb516?auto=format&fit=crop&w=800&q=80",
+    description: "Rare alexandrite that changes color in different light.",
+    category: "rings",
+    featured: false
+  },
+  {
+    id: 42,
+    name: "Freshwater Pearl Strand",
+    price: 799,
+    image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&q=80",
+    description: "Classic freshwater pearl strand necklace.",
+    category: "necklaces",
+    featured: false
+  },
+  {
+    id: 43,
+    name: "Kunzite Drop Earrings",
+    price: 2799,
+    image: "https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?auto=format&fit=crop&w=800&q=80",
+    description: "Soft pink kunzite in graceful drop style.",
+    category: "earrings",
+    featured: false
+  },
+  {
+    id: 44,
+    name: "Snake Chain Bracelet",
+    price: 1299,
+    image: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=800&q=80",
+    description: "Flexible snake chain in sterling silver.",
+    category: "bracelets",
+    featured: false
+  },
+  {
+    id: 45,
+    name: "Paraiba Tourmaline Ring",
+    price: 12999,
+    image: "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&fit=crop&w=800&q=80",
+    description: "Extremely rare Paraiba tourmaline with neon blue glow.",
+    category: "rings",
+    featured: false
+  },
+  {
+    id: 46,
+    name: "Jade Cabochon Necklace",
+    price: 1999,
+    image: "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?auto=format&fit=crop&w=800&q=80",
+    description: "Imperial jade cabochon on silk cord.",
+    category: "necklaces",
+    featured: false
+  },
+  {
+    id: 47,
+    name: "Zircon Brilliant Studs",
+    price: 1699,
+    image: "https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=800&q=80",
+    description: "Brilliant blue zircon stud earrings.",
+    category: "earrings",
+    featured: false
+  },
+  {
+    id: 48,
+    name: "Mesh Gold Bracelet",
+    price: 3299,
+    image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&q=80",
+    description: "Sophisticated mesh bracelet in 14k gold.",
+    category: "bracelets",
+    featured: false
+  },
+  {
+    id: 49,
+    name: "Padparadscha Sapphire Ring",
+    price: 8499,
+    image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80",
+    description: "Rare padparadscha sapphire with peachy-pink color.",
+    category: "rings",
+    featured: false
+  },
+  {
+    id: 50,
+    name: "Vintage Cameo Necklace",
+    price: 1299,
+    image: "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?auto=format&fit=crop&w=800&q=80",
+    description: "Antique-style cameo pendant on vintage chain.",
+    category: "necklaces",
+    featured: false
+  }
 ];

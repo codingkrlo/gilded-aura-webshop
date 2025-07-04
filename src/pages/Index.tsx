@@ -4,7 +4,6 @@ import HeroSection from "@/components/HeroSection";
 import ProductCard from "@/components/ProductCard";
 import LoginModal from "@/components/LoginModal";
 import ContactCard from "@/components/ContactCard";
-import AboutSection from "@/components/AboutSection";
 import { jewelryItems, JewelryItem } from "@/data/jewelry";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Star, Shield, Truck } from "lucide-react";
@@ -63,9 +62,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-      {/* About Section */}
-      <AboutSection />
 
       {/* Features Section */}
       <section className="py-20 bg-jetblack-100">

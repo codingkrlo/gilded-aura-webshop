@@ -93,7 +93,7 @@ const Header = ({ cartCount, onLoginClick, showBackButton = false }: HeaderProps
                   </svg>
                 </div>
               </div>
-              <span className="text-xl font-bold text-white font-serif group-hover:text-gold-500 transition-colors duration-300">LUXE</span>
+              <span className="text-xl font-bold text-white font-serif group-hover:text-gold-500 transition-colors duration-300">IIRA</span>
             </Link>
           </div>
 
@@ -137,7 +137,7 @@ const Header = ({ cartCount, onLoginClick, showBackButton = false }: HeaderProps
                   {productCategories.map((category) => (
                     <DropdownMenuItem 
                       key={category}
-                      className="text-silver-300 hover:text-gold-500 hover:bg-gold-500/10 cursor-pointer transition-colors duration-300"
+                      className="text-silver-300 hover:text-black hover:bg-gold-500/90 cursor-pointer transition-colors duration-300"
                       onClick={() => navigate(`/collections?category=${category.toLowerCase()}`)}
                     >
                       {category}
@@ -149,7 +149,7 @@ const Header = ({ cartCount, onLoginClick, showBackButton = false }: HeaderProps
                 
                 {/* User Actions */}
                 <DropdownMenuItem 
-                  className="text-silver-300 hover:text-gold-500 hover:bg-gold-500/10 cursor-pointer transition-colors duration-300"
+                  className="text-silver-300 hover:text-black hover:bg-gold-500/90 cursor-pointer transition-colors duration-300"
                   onClick={onLoginClick}
                 >
                   <User className="mr-2 h-4 w-4" />
@@ -157,7 +157,7 @@ const Header = ({ cartCount, onLoginClick, showBackButton = false }: HeaderProps
                 </DropdownMenuItem>
                 
                 <DropdownMenuItem 
-                  className="text-silver-300 hover:text-gold-500 hover:bg-gold-500/10 cursor-pointer transition-colors duration-300"
+                  className="text-silver-300 hover:text-black hover:bg-gold-500/90 cursor-pointer transition-colors duration-300"
                   onClick={() => navigate("/cart")}
                 >
                   <ShoppingCart className="mr-2 h-4 w-4" />

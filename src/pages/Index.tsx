@@ -141,12 +141,12 @@ const Index = () => {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <div className="w-8 h-8 bg-gradient-gold rounded-full flex items-center justify-center">
-                  <span className="text-jetblack-500 font-bold text-sm">L</span>
+                  <span className="text-jetblack-500 font-bold text-sm">I</span>
                 </div>
-                <span className="text-xl font-bold text-gold-500 font-serif">LUXE</span>
+                <span className="text-xl font-bold text-gold-500 font-serif">IIRA</span>
               </div>
               <p className="text-silver-400">
-                Luxury jewelry crafted with passion and precision since 1985.
+                Luxury jewelry crafted with passion and precision since 1895.
               </p>
             </div>
 
@@ -182,7 +182,7 @@ const Index = () => {
           </div>
 
           <div className="border-t border-silver-700 pt-8 text-center text-silver-500">
-            <p>&copy; 2024 LUXE Jewelry. All rights reserved.</p>
+            <p>&copy; 2024 IIRA Jewelry. All rights reserved.</p>
           </div>
         </div>
       </footer>
